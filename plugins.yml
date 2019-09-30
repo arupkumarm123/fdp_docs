@@ -1,0 +1,8 @@
+
+# this file is and appended to mkdocs.yml only during pdf builds.
+
+plugins:
+  - search
+  - pdf-export:
+      enabled_if_env: PDF
+      combined: false

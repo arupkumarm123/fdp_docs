@@ -1,0 +1,33 @@
+@page {
+    size: a4 portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: pre;
+    color: grey;
+
+    @top-left {
+        content: '© 2019 GoJek Private Ltd.';
+    }
+
+    @bottom-left {
+        content: '© 2019 GoJek Private Ltd.';
+    }
+
+    @top-center {
+        content: '- CONFIDENTIAL -';
+    }
+
+    @bottom-center {
+        content: '- CONFIDENTIAL -';
+    }
+
+
+    @top-right {
+        content: 'Page 'counter(page);
+    }
+
+    @bottom-right {
+        content: 'Page 'counter(page);
+    }
+}
